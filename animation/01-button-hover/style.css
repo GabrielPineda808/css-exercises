@@ -17,3 +17,9 @@ button {
   padding: 16px 24px;
   text-align: center;
 }
+
+button:hover {
+  transition: font-size 0.3s;
+  font-size: 150%;
+  
+}
