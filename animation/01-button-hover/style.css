@@ -18,8 +18,22 @@ button {
   text-align: center;
 }
 
+/* My answer
+  The transition element should go into the button element before the hover is called upon as it will assign it to the button element and not on all buttons on hover how it does now
+  The transform element is new to me but it makes sense as it changes the element in specific ways depending on how we call upon it for example we can use it to rotate the button.
+*/
+
 button:hover {
   transition: font-size 0.3s;
   font-size: 150%;
   
 }
+
+/* Actual Answer
+button {
+  transition: transform .3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.2)
+} */
